@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  sqlite3:
+    image: db/sqlite3:latest
+    container_name: sqlite3_container
+    build: ./
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./db:/usr/src/app/db
