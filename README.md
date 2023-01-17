@@ -8,3 +8,10 @@ alternative way
 ```docker
 docker run --rm -it -v "$(pwd):/code" -w /code keinos/sqlite3 sqlite3 db/chinook.db
 ```
+
+postgres
+```linux
+make postgres
+# wait postgres initial database
+make start
+```
